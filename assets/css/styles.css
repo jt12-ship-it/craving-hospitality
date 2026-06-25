@@ -585,6 +585,45 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 .mt-1{margin-top:1rem}.mt-2{margin-top:2rem}.mb-0{margin-bottom:0}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
 
+/* ============================================================
+   MOBILE POLISH — all rules use max-width; desktop untouched
+   ============================================================ */
+
+/* 481–560 px: fill the section-padding gap between the 480 and 680 breakpoints */
+@media (min-width:481px) and (max-width:560px){
+  .section{padding-block:clamp(44px,9vw,60px)}
+  .section--tight{padding-block:clamp(24px,5.5vw,40px)}
+}
+
+/* ≤ 680 px ------------------------------------------------------- */
+@media (max-width:680px){
+  /* Purely decorative animated shapes (aria-hidden) — distracting at small sizes */
+  .deco--spin,.deco--float{display:none}
+
+  /* "How it works" step icons: scale down for single-column stacked layout */
+  .step__icon{width:72px;height:72px}
+  .step__icon svg{width:36px;height:36px}
+  .step__icon::after{width:28px;height:28px;top:-8px;right:-8px;font-size:.82rem}
+
+  /* CTA band: reduce from 40px radius (--r-xl) so it doesn't look over-rounded */
+  .ctaband{border-radius:var(--r-lg)}
+}
+
+/* ≤ 480 px ------------------------------------------------------- */
+@media (max-width:480px){
+  /* Two-button CTA pairs: stack vertically so neither wraps mid-word */
+  .hero__cta{flex-direction:column;align-items:stretch}
+  .hero__cta .btn{width:100%;justify-content:center}
+
+  /* Contact link row in closing CTA band: stack cleanly */
+  .contactrow{flex-direction:column;align-items:center;gap:.75rem}
+  .contactrow a{font-size:.95rem}
+
+  /* Story-media on About page: single column is cleaner than two 158px columns */
+  .story-media{grid-template-columns:1fr}
+  .story-media img{height:220px;object-fit:cover}
+}
+
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
   .reveal{opacity:1!important;transform:none!important}
