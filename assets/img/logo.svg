@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background -->
+  <circle cx="50" cy="50" r="50" fill="#1F4D2E"/>
+  <!-- C arc in cream -->
+  <path d="M70,30 A28,28 0 1 0 70,70"
+        fill="none" stroke="#F7F4E3" stroke-width="10" stroke-linecap="round"/>
+  <!-- Coral accent dots at the open tips -->
+  <circle cx="70" cy="30" r="6" fill="#BC4D38"/>
+  <circle cx="70" cy="70" r="6" fill="#BC4D38"/>
+</svg>
