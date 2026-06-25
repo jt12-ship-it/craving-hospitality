@@ -494,7 +494,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   .hero__grid{grid-template-columns:1fr;text-align:center}
   .hero__sub{margin-inline:auto}
   .hero__cta{justify-content:center}
-  .hero__media{order:-1;max-width:440px;margin-inline:auto}
+  .hero__media{order:-1;max-width:360px;margin-inline:auto}
   .hero__scroll{display:none}
   .hero__pill--a{left:2%;top:4%}
   .hero__pill--b{right:2%;bottom:6%}
@@ -518,8 +518,20 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
   .dishrow.scroll>*{scroll-snap-align:center}
   .contactrow a{font-size:1rem}
   .footer__contact a{font-size:.9rem}
+  .hero__media{max-width:260px}
+  .hero__food{width:96%;rotate:-4deg}
+  .hero__grid{gap:14px}
+  .card__media{aspect-ratio:3/2}
 }
 @media (max-width:480px){
+  h1{font-size:clamp(2.1rem,1.6rem + 3.5vw,2.7rem)}
+  h2{font-size:clamp(1.75rem,1.4rem + 2.5vw,2.1rem)}
+  .section{padding-block:clamp(36px,8vw,56px)}
+  .section--tight{padding-block:clamp(20px,5vw,36px)}
+  .hero{padding-top:94px;padding-bottom:24px}
+  .hero__media{max-width:200px}
+  .hero__grid{gap:8px}
+  .phero{padding-top:clamp(106px,14vw,130px);padding-bottom:clamp(24px,5vw,40px)}
   .menubar__inner{flex-direction:column;align-items:flex-start;gap:10px}
   .filters{width:100%;flex-wrap:nowrap;overflow-x:auto;padding-bottom:.5rem;scrollbar-width:none}
   .filters::-webkit-scrollbar{display:none}
