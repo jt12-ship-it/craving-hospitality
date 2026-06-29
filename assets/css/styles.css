@@ -234,7 +234,7 @@ p{margin:0 0 1.1em}
 }
 .nav__inner{display:flex;align-items:center;justify-content:space-between;gap:1.5rem}
 .nav__logo{display:flex;align-items:center;gap:.7rem;font-family:var(--font-display);font-weight:700;color:var(--forest);font-size:1.05rem;line-height:1}
-.nav__logo img{width:42px;height:42px;border-radius:50%;transition:transform .3s var(--ease)}
+.nav__logo img{width:44px;height:44px;border-radius:50%;box-shadow:0 0 0 1.5px rgba(31,77,46,.13),0 2px 10px rgba(31,49,30,.13);transition:transform .3s var(--ease)}
 .nav__logo:hover img{transform:rotate(-6deg) scale(1.04)}
 .nav__logo small{display:block;font-family:var(--font-body);font-weight:600;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--coral-deep)}
 .nav__links{display:flex;align-items:center;gap:.3rem}
